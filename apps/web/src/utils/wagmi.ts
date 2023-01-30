@@ -74,13 +74,6 @@ export const coinbaseConnector = new CoinbaseWalletConnector({
   },
 })
 
-export const walletConnectConnector = new WalletConnectConnector({
-  chains,
-  options: {
-    qrcode: true,
-  },
-})
-
 export const walletConnectV2Connector = new WalletConnectConnector({
   chains,
   options: {
@@ -94,6 +87,8 @@ export const walletConnectNoQrCodeConnector = new WalletConnectConnector({
   chains,
   options: {
     qrcode: false,
+    version: '2',
+    projectId: 'e542ff314e26ff34de2d4fba98db70bb',
   },
 })
 
