@@ -81,6 +81,15 @@ export const walletConnectConnector = new WalletConnectConnector({
   },
 })
 
+export const walletConnectV2Connector = new WalletConnectConnector({
+  chains,
+  options: {
+    qrcode: true,
+    version: '2',
+    projectId: 'e542ff314e26ff34de2d4fba98db70bb',
+  },
+})
+
 export const walletConnectNoQrCodeConnector = new WalletConnectConnector({
   chains,
   options: {
@@ -126,7 +135,7 @@ export const client = createClient({
     metaMaskConnector,
     injectedConnector,
     coinbaseConnector,
-    walletConnectConnector,
+    walletConnectV2Connector,
     bscConnector,
     bloctoConnector,
     ledgerConnector,
