@@ -141,5 +141,5 @@ export const client = createClient({
 
 export const CHAIN_IDS = chains.map((c) => c.id)
 
-export const isChainSupported = memoize((chainId: number) => CHAIN_IDS.includes(chainId))
-export const isChainTestnet = memoize((chainId: number) => chains.find((c) => c.id === chainId)?.testnet)
+export const isChainSupported = memoize((chainId: number) => (CHAIN_IDS as number[]).includes(chainId))
+export const isChainTestnet = memoize((chainId: number) => 'testnet' in chains.find((c) => c.id === chainId))
