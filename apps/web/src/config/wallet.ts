@@ -26,7 +26,7 @@ const createQrCode = (chainId: number, connect) => async () => {
   await delay(100)
   const provider = (await walletConnectNoQrCodeConnector.getProvider()) as WalletConnectProvider
   const { uri } = provider
-  console.log(uri)
+  console.info(uri)
 
   return uri
 }
