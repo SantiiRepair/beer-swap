@@ -80,6 +80,7 @@ export const walletConnectV2Connector = new WalletConnectConnector({
     qrcode: true,
     version: '2',
     projectId: 'e542ff314e26ff34de2d4fba98db70bb',
+    logger: 'info',
   },
 })
 
