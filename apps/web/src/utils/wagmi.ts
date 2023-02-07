@@ -87,7 +87,8 @@ export const walletConnectV2Connector = new WalletConnectConnector({
 })
 
 export const walletConnectNoQrCodeConnector = new WalletConnectConnector({
-  chains,
+  // v2 not supported on testnet
+  chains: MAINNET_CHAINS,
   options: {
     qrcode: false,
     version: '2',
