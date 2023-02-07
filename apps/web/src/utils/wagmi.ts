@@ -12,7 +12,8 @@ import { LedgerConnector } from 'wagmi/connectors/ledger'
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 import { SafeConnector } from './safeConnector'
 
-const CHAINS = [bsc, mainnet, bscTestnet, goerli]
+const MAINNET_CHAINS = [bsc, mainnet]
+const CHAINS = [...MAINNET_CHAINS, bscTestnet, goerli]
 
 const getNodeRealUrl = (networkName: string) => {
   let host = null
@@ -75,7 +76,8 @@ export const coinbaseConnector = new CoinbaseWalletConnector({
 })
 
 export const walletConnectV2Connector = new WalletConnectConnector({
-  chains,
+  // v2 not supported on testnet
+  chains: MAINNET_CHAINS,
   options: {
     qrcode: true,
     version: '2',
