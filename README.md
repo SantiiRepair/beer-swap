@@ -1,82 +1,57 @@
-# 🥞 Pancake Frontend
+## InveCoinz Dex 🏴‍☠️
 
-<p align="center">
-  <a href="https://pancakeswap.finance">
-      <img src="https://pancakeswap.finance/logo.png" height="128">
-  </a>
-</p>
+### Features
 
-This project contains the main features of the pancake application.
+- [x] Test network BSC, testnet, mainnet
 
-If you want to contribute, please refer to the [contributing guidelines](./CONTRIBUTING.md) of this project.
+- [x] Swap any token from BSC network 
 
-## Documentation
+- [x] Stake ICZ token or your token
 
-- [Info](doc/Info.md)
-- [Cypress tests](doc/Cypress.md)
+- [x] List your token no verified 
 
-> Install dependencies using **yarn**
+- [x] Contracts used in the dex
 
-## `apps/web`
-<details>
-<summary>
-How to start
-</summary>
+- [x] Manage your liquidity pool
 
-```sh
-yarn
-```
+- [ ] Filling signals using hooks
 
-start the development server
-```sh
-yarn dev
-```
+- [ ] Arbitrage, contracts and dApp
 
-build with production mode
-```sh
-yarn build
+- [ ] Trading View, see your fav tokens
 
-# start the application after build
-yarn start
-```
-</details>
+### Screenshots
 
-## `apps/aptos`
-<details>
-<summary>
-How to start
-</summary>
+<img src="https://i.ibb.co/vD6w8Vw/hero-white.png" height="300">
 
-```sh
-yarn dev:aptos
-```
-```sh
-yarn turbo run build --filter=aptos-web
-```
-</details>
+### Tech Stack
 
-## `apps/blog`
-<details>
-<summary>
-How to start
-</summary>
+- [ReactJS](https://reactjs.org/)
 
-```sh
-yarn dev:blog
-```
-```sh
-yarn turbo run build --filter=blog
-```
-</details>
+- [NextJS](https://nextjs.org/)
 
+- [PancakeSwap SDK](https://github.com/pancakeswap/pancake-swap-sdk)
 
-## Packages
+- [EthersJS](https://docs.ethers.org/v5/)
 
-| Package                                                       | Description                                                                                                            |
-|---------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [sdk](/packages/swap-sdk)                                     | An SDK for building applications on top of Pancakeswap                                                                 |
-| [aptos-swap-sdk](/packages/aptos-swap-sdk)                    | Aptos version of Swap SDK                                                                                              |
-| [swap-sdk-core](/packages/swap-sdk-core)                      | Swap SDK Shared code                                                                                                   |
-| [wagmi](/packages/wagmi)                                      | Extension for [wagmi](https://github.com/wagmi-dev/wagmi), including bsc chain and binance wallet connector            |
-| [awgmi](/packages/awgmi)                                      | connect to Aptos with similar wagmi React hooks.                                                                       |
+- [IERC20 Interface](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#IERC20)
 
+- [HardhatJS](https://hardhat.org/)
+
+### References
+
+- [PancakeSwap/pancake-frontend](https://github.com/pancakeswap/pancake-frontend)
+
+### Report an issue
+
+- [Telegram](https://t.me/SantiiRepair)
+
+### Donate
+
+- [ETH & BSC]
+
+- [TRON] 
+
+### License
+
+MIT
