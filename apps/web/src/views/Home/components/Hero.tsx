@@ -2,11 +2,9 @@ import { Button, Flex, Heading, NextLinkFromReactRouter } from '@pancakeswap/uik
 import { useAccount } from 'wagmi'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import { useTranslation } from '@pancakeswap/localization'
-import Image from 'next/legacy/image'
 import { ChainId } from '@pancakeswap/sdk'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import styled, { keyframes } from 'styled-components'
-import bunnyImage from '../../../../public/images/home/lunar-bunny/astronaut-bunny.png'
 import CompositeImage, { CompositeImageProps } from './CompositeImage'
 import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
 
@@ -32,6 +30,27 @@ const fading = () => keyframes`
   to {
     opacity: 0.9;
   }
+`
+
+const handAnim = () => keyframes`
+  from {
+    transform: translate(0,  0px);
+  }
+  50% {
+    transform: rotate(-5deg);
+  } 
+`
+
+const PirateWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  animation: ${flyingAnim} 3.5s ease-in-out infinite;
+`
+const HandWrapper = styled.img`
+  position: absolute;
+  bottom: 1.5%;
+  animation: ${handAnim} 3.5s ease-in-out infinite;
 `
 
 const BgWrapper = styled.div`
@@ -81,11 +100,11 @@ const StarsWrapper = styled.div`
 `
 
 const starsImage: CompositeImageProps = {
-  path: '/images/home/lunar-bunny/',
+  path: '/images/home/pirate-kit/',
   attributes: [
-    { src: 'star-l', alt: '3D Star' },
-    { src: 'star-r', alt: '3D Star' },
-    { src: 'star-top-r', alt: '3D Star' },
+    { src: 'coin-l', alt: 'Coin' },
+    { src: 'coin-r', alt: 'Coin' },
+    { src: 'coin-top-r', alt: 'Coin' },
   ],
 }
 
@@ -128,7 +147,7 @@ const Hero = () => {
       >
         <Flex flex="1" flexDirection="column">
           <Heading scale="xxl" color="secondary" mb="24px">
-            {t('The moon is made of pancakes.')}
+            {t('Stay trading and buy a beer.')}
           </Heading>
           <Heading scale="md" mb="24px">
             {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
@@ -147,9 +166,10 @@ const Hero = () => {
           mb={['24px', null, null, '0']}
           position="relative"
         >
-          <BunnyWrapper>
-            <Image src={bunnyImage} priority placeholder="blur" alt={t('Lunar bunny')} />
-          </BunnyWrapper>
+          <PirateWrapper>
+            <img src='/images/home/pirate-kit/pirate.png' alt={t('Pirate')} />
+             <HandWrapper src='/images/home/pirate-kit/hand.png' alt={t('Hand')} />
+          </PirateWrapper>
           <StarsWrapper>
             <CompositeImage {...starsImage} />
           </StarsWrapper>
