@@ -22,7 +22,7 @@
 
 ### Screenshots
 
-<img src="https://i.ibb.co/vD6w8Vw/hero-white.png" height="300">
+<img src="https://i.ibb.co/jWHzVR6/hero.png" height="300">
 
 ### Tech Stack
 
