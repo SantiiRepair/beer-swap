@@ -50,9 +50,8 @@
 
 - [ETH & BSC]
 
-- [TRON]
-TJDQegU2epDeTJZ8qBpUsehMjZg1cjvC63
+- [TRON](https://tronscan.org/#/address/TJDQegU2epDeTJZ8qBpUsehMjZg1cjvC63)
 
 ### License
 
-MIT
+GPL
