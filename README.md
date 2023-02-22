@@ -1,4 +1,4 @@
-## InveCoinz Dex 🏴‍☠️
+## Beer Swap  🏴‍☠️
 
 ### Features
 
@@ -50,7 +50,8 @@
 
 - [ETH & BSC]
 
-- [TRON] 
+- [TRON]
+TJDQegU2epDeTJZ8qBpUsehMjZg1cjvC63
 
 ### License
 
