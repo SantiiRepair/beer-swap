@@ -34,8 +34,6 @@
 
 - [EthersJS](https://docs.ethers.org/v5/)
 
-- [IERC20 Interface](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#IERC20)
-
 - [HardhatJS](https://hardhat.org/)
 
 ### References
@@ -50,8 +48,10 @@
 
 - [ETH & BSC]
 
-- [TRON](https://tronscan.org/#/address/TJDQegU2epDeTJZ8qBpUsehMjZg1cjvC63)
-
+- TRON
+```
+TJDQegU2epDeTJZ8qBpUsehMjZg1cjvC63
+```
 ### License
 
 GPL
