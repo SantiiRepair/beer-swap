@@ -6,7 +6,7 @@
 
 - [x] Swap any token from BSC network 
 
-- [x] Stake ICZ token or your token
+- [x] Stake BRT token or your token
 
 - [x] List your token no verified 
 
