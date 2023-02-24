@@ -34,7 +34,7 @@
 
 - [EthersJS](https://docs.ethers.org/v5/)
 
-- [HardhatJS](https://hardhat.org/)
+- [Moralis API](https://docs.moralis.io/web3-data-api)
 
 ### References
 
@@ -46,7 +46,7 @@
 
 ### Donate
 
-- [ETH & BSC]
+- ETH & BSC
 
 - TRON
 ```
