@@ -1,4 +1,4 @@
-## Beer Swap  🏴‍☠️
+## Beer Swap 🍺
 
 ### Features
 
@@ -20,7 +20,7 @@
 
 - [ ] Trading View, see your fav tokens
 
-### Screenshots
+### Ad Banner
 
 <img src="https://i.ibb.co/jWHzVR6/hero.png" height="300">
 
